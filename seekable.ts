@@ -31,15 +31,12 @@ export const GET = async function ({ request, params, cookies }) {
 	});
 } satisfies RequestHandler;
 
-
 // seekableStream.ts
 export async function seekableStream(
 	fileInfo: {
 		path: string;
 		mimetype: string;
 		size: number;
-		name?: string;
-		ext?: string;
 	},
 	rangeHeader?: string | null,
 ) {
